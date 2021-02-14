@@ -11,21 +11,30 @@ package training;
  */
 
 public class ProductOfEvenNumbers {
-    private static int countExpression(int a) {
-        int result = 1;
+    public static String countExpression(double a){
+        System.out.println("Please input only natural number");
+        return ("Please input only natural number");
+    }
 
-        if ( a == 0 || a == 1 );
+    public static int countExpression(int a) {
 
+        if (a < 0) {
+            System.out.println("Please input only natural number");
+            return 0;
+        }
+
+        else if ( a == 0 || a == 1 )
+            return 1;
         else
         {
+            int result = 1;
             for (int i = 2; i <= a; i = i + 2)
             {
                 result *= i;
             }
-
+            System.out.println(result);
+            return result;
         }
-        System.out.println(result);
-        return result;
     }
 
 
