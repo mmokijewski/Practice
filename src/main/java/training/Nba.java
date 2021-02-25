@@ -1,6 +1,16 @@
 package training;
 import java.util.Arrays;
 
+/*
+    nbaCup method takes 2 Strings as arguments:
+        - matches result with team names and score e.g:
+            "Indiana Pacers 98 Charlotte Hornets 86,Dallas Mavericks 87 Phoenix Suns 99,Atlanta Hawks 81 Memphis Grizzlies 82,"
+        - team name which parameters we want to get back
+
+    and return String with nr of : wins, loses, draws, total scored point, total lost points and rank e.g:
+    "Boston Celtics:W=4;D=0;L=0;Scored=403;Conceded=350;Points=12"
+
+ */
 class Nba {
 
     public static String nbaCup(String resultSheet, String toFind) {
